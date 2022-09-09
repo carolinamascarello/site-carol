@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto | Contato</title>
+        <link rel="shortcut icon" href="img/logo_fofoqueiros.svg" />
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <h1>
+                    <a href="index.html">
+                        <img src="img/logo_fofoqueiros.svg" alt="Meu Logotipo">
+                    </a>
+                </h1>
+                <ul>
+                    <li>
+                        <a href="index.html">início</a>
+                    </li>
+                    <li>
+                        <a href="servicos.html">serviços</a>
+                    </li>
+                    <li>
+                        <a href="contato.html">contato</a>
+                    </li>
+                    <li>
+                        <a href="produtos.html">produtos</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header>
+            <div class="container clearfix">
+                <img src="img/contato.png" alt="if">
+            </div>
+        </header>
+        <main>
+            <div class="container clearfix">
+                <div class="col-12">
+                    <form id="contato">
+                        <fieldset>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu Nome" required="true">
+    
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu Email" required="true">
+    
+                        <label>Informe sua Turma</label>
+                        <div class="form-group">
+                            <input type="radio" name="turma" id="turma_1A" value="Info" checked>
+                            <label for="turma_1A">Info </label>
+                            <input type="radio" name="turma" id="turma_1B" value="Agro" checked>
+                            <label for="turma_1B">Agro</label>
+                            <input type="radio" name="turma" id="turma_1B" value="Eletro" checked>
+                            <label for="turma_1B">Eletro </label>
+                        </div> <br>
+                        <label for="nome">Motivo</label>
+                        <select name="motivo" id="motivo" required>
+                            <option value="">Selecione o Motivo</option>
+                            <option value="duvida">Dúvida ❓ </option>
+                            <option value="sugestao">Sugestão 💡 </option>
+                            <option value="problema">Relatar Problema 🤬 </option>
+                            <option value="outro">Outro 😊</option>
+                        </select>
+                        <label for="mensagem">Informe sua Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                        <!-- <input type="submit" value="Enviar">-->
+                        <button type="submit"> Enviar </button>
+                    </fieldset>
+                    </form>
+                </div>
+            </div>
+        </main>
+    
+        <footer>
+
+                <div class="container clearfix center">
+                    <p><center>Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira</center></p>
+                    <p><center>Rodovia SC 135, km 125 - Bairro Campo Experimental - CEP 89564-590 - Videira - SC - Fone: (49) 3533-4900</center></p>
+                </div>
+            </div>
+        </footer>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>        
+        <script type="text/javascript">
+            (function(){ emailjs.init("gnhAay_gvyyzWEVO5");})();
+        </script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
